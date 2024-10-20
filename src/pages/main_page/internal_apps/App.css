@@ -1,0 +1,93 @@
+.frametest {
+    position:absolute;
+    border-top: 1px #02020200;
+    border-left: 2px #0202022f;
+    border-right: 2px #0202022f;
+    border-bottom: 1px #02020200;
+    border-style: solid;
+    z-index: 99;
+    cursor: move;
+    font-size: 0.5em;
+    color: white;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 0.1fr 0.1fr 0.1fr;
+    height: 37px;
+    background-color: #2f2f2f;
+    transition: all 0.1 ease-in-out;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.frame{
+    z-index: 9;
+    position:sticky;
+}
+
+
+.frametest2{
+border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    background-color: #333333d3;
+}
+
+.frametext2{
+    white-space: nowrap;
+    color: white;
+    margin-top: .3svh;
+    font-weight: normal;
+}
+.frame-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.minimize-btn, .close-btn, .fullscreen-btn {
+    background-color: #00000000;
+    color: white;
+    border-radius: 10px;
+    padding: 0.1px 9px;
+    margin-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.background {
+    position: absolute;
+    display: block;
+    cursor:context-menu;
+    font-size: 1em;
+    color: white;
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
+    user-select: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 37px;
+
+}
+
+.test{
+    border: 2px ;
+}
+
+.ContextMenu{
+    width: 15svh;
+    position: absolute;
+    background-color: rgb(252, 252, 252);
+    z-index: 99;
+    border: 2px #c5c5c56c;
+    border-style: solid;
+    border-radius: 10px;
+    padding-bottom: 1svh;    
+}

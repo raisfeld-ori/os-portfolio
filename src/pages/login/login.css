@@ -1,0 +1,636 @@
+
+/* --------------------- MAIN OPEN APP ---------------------*/
+
+#background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #192b84;
+    text-align: center;
+}
+
+
+
+
+
+
+.down{
+    position: absolute;
+    left: -10svw;
+    border-left: 40svh solid transparent;
+	border-right: 40svh solid transparent;
+	border-top: 110svh solid #4359CD;
+    z-index: -2;
+    animation-duration: 2s;
+    animation-name: turtle;
+  }
+  
+  @keyframes turtle {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+  }
+
+
+.dot {
+    height: 170px;
+    width: 170px;
+    border: 2px solid #00000013;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden; 
+    margin-top: 10svh;
+}
+
+.dot img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* --------------------- LOGIN ---------------------*/
+
+
+
+/* --------------------- BUTTONS / INPUT  LOGIN ---------------------*/
+
+.writenamelogin {
+    font-size: 2svh;
+    user-select: none;
+
+}
+
+.writepasswordlogin{
+    font-size: 2svh;
+    user-select: none;
+
+}
+
+#form{
+    display: block;
+    font-family: 'Ubuntu Mono';
+    margin-top: 7svh;
+    user-select: none;
+    margin-top: 15svh;
+}
+
+
+#form > button{
+    background-color: #22222255;
+    border: 0;
+    border-radius: 20px;
+    color: #FFFFFF;
+    user-select: none;
+
+}
+
+
+.upperbutton{
+    /* Login / Signup buttons*/ 
+    padding-top: 2svh;
+    padding-bottom: 2svh;
+    border: 0;
+    font-size: 2svh;
+    margin: 20px;
+    margin-top: 80px;
+    width: 15svh;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Ubuntu Mono';
+    user-select: none;
+
+}
+
+.upperbutton[aria-current=false]{
+    background-color: #393C4B;
+}
+
+.upperbutton[aria-current=true]{
+    background-color: #0E57CA;
+    font-weight: bold;
+}
+
+.upperbutton[aria-current=false]:hover{
+    background-color: #262831;
+}
+
+.upperbutton[aria-current=true]:hover{
+    background-color: #0c46a3;
+    font-weight: bold;
+}
+
+.signup_login_button_main_menu{
+    padding-left: 2svw;
+    font-weight: bold;
+    padding-right: 2svw;
+    padding-top: 1svh;
+    padding-bottom: 1svh;
+    border: 0;
+    font-size: 2svh;
+    margin: 10px;
+    user-select: none;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Ubuntu Mono';
+
+}
+
+/* --------------------- TEXT CLASSES / IDS ONLY LOGIN---------------------*/
+
+#welcome_login{
+
+    font-size: 6svh;
+    color: #e7e7e9;
+    user-select: none;
+
+
+}
+
+#plslogin {
+  font-size: 2.5svh;
+  font-weight: 400;
+  color: #e7e7e9;
+  text-shadow: 2px 2px 4px rgba(56, 56, 56, 0.746), 0 0 5px rgba(67, 67, 67, 0.5);
+  user-select: none;
+
+}
+
+
+#error{
+    color: #FF0000;
+    font-size: 2svh;
+    user-select: none;
+
+}
+
+#melody {
+    margin-top: 2svh;
+    color: #ffffff;
+    font-size: 2svh;
+    font-weight: bold;
+    user-select: none;
+
+}
+.nameload{
+  margin-top: 2svh;
+  color: #2f6df3;
+  font-size: 2svh;
+  font-weight: bold;
+  user-select: none;
+}
+
+/* --------------------- SIGNUP ---------------------*/
+
+.input {
+    max-width: 250px;
+    height: 50px;
+    background-color: #05060f37;
+    border-radius: .5rem;
+    color: #ffffff;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+    user-select: none;
+
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: .60rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffffc9;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+    margin-top: 20px;
+    user-select: none;
+
+  }
+  
+  .input:hover, .input:focus, .input-group:hover .input {
+    outline: none;
+    border-color: #ffffff94;
+  }
+  
+  .input-group:hover .label, .input:focus {
+    color: #ffffffc2;
+    user-select: none;
+
+  }
+
+  ::placeholder {
+   
+    font-size: 1em;
+    color: #e7e7e9;
+    user-select: none;
+
+  }
+
+
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    margin-top: 20px;
+    text-decoration: none;
+    background: rgba(245, 245, 220, 0);
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    user-select: none;
+
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+
+/* ---------------------- loading screen ------------------------------ */
+
+.load
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  font-weight: bold;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:150px;
+  background:transparent;
+  border:3px solid #0000000f;
+  border-radius:50%;
+  text-align:center;
+  line-height:150px;
+  font-family:sans-serif;
+  font-size:20px;
+  color:#0084ff;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  text-shadow:0 0 10px #006aff55;
+  box-shadow:0 0 20px rgba(50, 50, 50, 0.242);
+}
+.load .error{
+  color:#ff0000;
+}
+.load:before
+{
+  content:'';
+  position:absolute;
+  top:-3px;
+  left:-3px;
+  width:100%;
+  height:100%;
+  border:3px solid transparent;
+  border-top:3px solid #0084ff;
+  border-right:3px solid #0084ff;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+.loadspan
+{
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  animation:animate 2s linear infinite;
+}
+.loadspan:before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10 px;
+  border-radius:50%;
+  background:#00b3ff;
+  top:-6px;
+  right:-8px;
+  box-shadow:0 0 20px #00bfff;
+}
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
+
+
+/* --------------------- DEV ACCESS BUTTONS ---------------------*/
+
+
+
+.IhaveNoEnemys {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100vw; 
+  height: 100vh; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  user-select: none;
+
+ }
+ 
+ .iseewhoyouare {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh;
+  z-index: -1; 
+  background-color: rgba(255, 255, 255, 0); 
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  user-select: none;
+
+
+ }
+
+ .skippinclass {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 6svh;
+  user-select: none;
+  width: 6svh;
+  
+}
+
+
+
+.skippinclass:hover {
+  cursor: not-allowed;
+  
+}
+
+
+/* test ------------------------*/
+
+
+.login2{
+  animation: text-shadow 1.5s ease-in-out infinite;
+  font-size: 3svh;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.571), 0 0 5px rgba(123, 123, 123, 0.5);
+  font-weight: 400;
+  color: #e7e7e9;
+  margin-bottom: 5svh;
+  user-select: none;
+
+
+}
+
+.login{
+  font-size: 3svh;
+  font-weight: 500;
+  color: #179bff;
+  text-shadow: 2px 2px 4px rgba(2, 39, 80, 0.571), 0 0 5px rgba(10, 21, 84, 0.818);
+  margin-top: 3svh;
+  user-select: none;
+
+
+}
+
+.login2:hover {
+  animation-play-state: paused;
+  user-select: none;
+
+
+}
+
+a:hover {
+  text-decoration: none;
+  cursor:wait;
+}
+
+@keyframes text-shadow {
+  0% {  
+      transform: translateY(0);
+
+  }
+
+  20% {  
+      transform: translateX(0.1em);
+
+  }
+
+  40% {  
+      transform: translateX(-0.1em);
+
+  }
+  
+ 60% {
+      transform: translateY(0em);
+
+  }
+
+  80% {  
+      transform: translateY(0);
+
+  }
+}
+
+.wordCarousel {
+  font-size: 36px;
+  font-weight: 100;
+  color: #ff0202;
+      overflow: hidden;
+      position: relative;
+      height: 65px;
+      padding-top: 10px;
+      user-select: none;
+      margin-top: -10px;
+  }
+
+li {
+  color: #0091ff;
+  font-weight: 700;
+  height: 45px;
+  margin-bottom: 45px;
+  display: block;
+  user-select: none;
+  text-shadow: 2px 2px 4px rgba(2, 39, 80, 0.571), 0 0 5px rgba(10, 21, 84, 0.818);
+
+}
+
+
+.flip2 { animation: flip2 9s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;     user-select: none;}
+.flip3 { animation: flip3 9s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;     user-select: none;}
+.flip4 { animation: flip4 9s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;     user-select: none;}
+.flip5 { animation: flip5 14s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;    user-select: none;}
+
+@keyframes flip2 {
+  0% { margin-top: -180px; }
+  5% { margin-top: -90px;  }
+  50% { margin-top: -90px; }
+  55% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -180px; }
+}
+
+@keyframes flip3 {
+  0% { margin-top: -270px; }
+  5% { margin-top: -180px; }
+  33% { margin-top: -180px; }
+  38% { margin-top: -90px; }
+  66% { margin-top: -90px; }
+  71% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+  0% { margin-top: -360px; }
+  5% { margin-top: -270px; }
+  25% { margin-top: -270px; }
+  30% { margin-top: -180px; }
+  50% { margin-top: -180px; }
+  55% { margin-top: -90px; }
+  75% { margin-top: -90px; }
+  80% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -360px; }
+}
+
+@keyframes flip5 {
+  0% { margin-top: -450px; }
+  5% { margin-top: -360px; }
+  20% { margin-top: -360px; }
+  25% { margin-top: -270px; }
+  40% { margin-top: -270px; }
+  45% { margin-top: -180px; }
+  60% { margin-top: -180px; }
+  65% { margin-top: -90px; }
+  80% { margin-top: -90px; }
+  85% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -450px; }
+}
+
+
+.ignore{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0px;
+  user-select: none;
+
+}
+
+.ignore img {
+  width: 4.5svh;
+  height: 4.5svh;
+}
+
+.ignore img:hover{
+  width: 5svh;
+  height: 5svh;
+}
+
+.flip5{
+  user-select: none;
+
+}
